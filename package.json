@@ -1,0 +1,10 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "A minimal portfolio built with HTML, CSS, and JavaScript.",
+  "scripts": {
+    "start": "npx serve . --single"
+  },
+  "author": "Your Name",
+  "license": "MIT"
+}

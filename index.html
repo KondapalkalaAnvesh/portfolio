@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Portfolio — Your Name</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Kondapalkala Anvesh</a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Open navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="theme-toggle" class="btn-ghost">Toggle Theme</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Hi, I'm <span class="accent">Kondapalkala Anvesh</span></h1>
+          <p class="lead">I build accessible and responsive web interfaces. I'm a software engineer who enjoys creating delightful user experiences.</p>
+          <p>
+            <a class="btn" href="#projects">See my work</a>
+            <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          </p>
+        </div>
+        <div class="hero-avatar">
+          <!-- profile picture area: displays uploaded image or placeholder -->
+          <div class="avatar-frame" id="avatar-frame">
+            <img id="profile-pic" src="assets/avatar.svg" alt="Avatar" width="220" height="220">
+          </div>
+          <div class="avatar-actions">
+            <label class="btn btn-ghost" for="avatar-input">Upload photo</label>
+            <input id="avatar-input" type="file" accept="image/*" style="display:none">
+            <button id="remove-avatar" class="btn btn-ghost" type="button">Remove</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About me</h2>
+      <p>I am a web developer with a focus on front-end technologies. I enjoy building performant, accessible, and maintainable applications.</p>
+      <ul class="skills">
+        <li>HTML &amp; CSS</li>
+        <li>JavaScript / TypeScript</li>
+        <li>React / Vue</li>
+        <li>Node.js</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <article class="project">
+          <div class="project-card">
+            <h3>Project One</h3>
+            <p>Short description of a project. Tech used: HTML, CSS, JS.</p>
+            <p><a href="#" class="btn btn-ghost">View</a></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-card">
+            <h3>Project Two</h3>
+            <p>Short description of another project. Tech used: React, Node.js.</p>
+            <p><a href="#" class="btn btn-ghost">View</a></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-card">
+            <h3>Project Three</h3>
+            <p>Short description of another project. Tech used: APIs, Serverless.</p>
+            <p><a href="#" class="btn btn-ghost">View</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <form id="contact-form" class="contact-form" action="#" method="post">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <p><button class="btn" type="submit">Send message</button></p>
+        <p id="form-msg" class="form-msg" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Your Name. Built with HTML, CSS, and JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
